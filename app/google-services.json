@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "948489626628",
+    "firebase_url": "https://cachego-1acaa-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "cachego-1acaa",
+    "storage_bucket": "cachego-1acaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948489626628:android:e14f76401d7964eb06c151",
+        "android_client_info": {
+          "package_name": "com.cachego.cachego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948489626628-ip8u6v6ijm4m7gk6gl0i6eu0vqv42omt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBETVYdSlMZgSCWlv2RgSD1wqySQZdzn_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948489626628-ip8u6v6ijm4m7gk6gl0i6eu0vqv42omt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948489626628:android:98ba7e0e418d61be06c151",
+        "android_client_info": {
+          "package_name": "com.example.cachego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948489626628-ip8u6v6ijm4m7gk6gl0i6eu0vqv42omt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBETVYdSlMZgSCWlv2RgSD1wqySQZdzn_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948489626628-ip8u6v6ijm4m7gk6gl0i6eu0vqv42omt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
