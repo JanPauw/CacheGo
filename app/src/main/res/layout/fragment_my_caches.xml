@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    tools:context=".MyCachesFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/llScreenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="My Caches"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/yellow"
+            android:src="@drawable/img_arrow_back_black"></ImageButton>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llScreenTitle"
+        android:layout_margin="25dp"
+        android:background="@color/yellow"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lvMyCaches"
+            android:layout_width="match_parent"
+            android:layout_above="@id/btnAddCache"
+            android:layout_height="match_parent"></ListView>
+
+        <Button
+            android:id="@+id/btnAddCache"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/blue"
+            android:text="Add Cache +"
+            android:textSize="20dp"></Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

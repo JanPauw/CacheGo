@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/yellow"
+        android:padding="10dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="false"
+        card_view:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCommentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2022/11/14" />
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed consectetur velit. Vivamus accumsan diam quis semper vulputate. Sed sagittis dapibus pharetra."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvCommentAuthor"
+                android:text="- Jan"
+                android:textSize="15dp"
+                android:textAlignment="textEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

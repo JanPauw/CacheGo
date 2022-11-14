@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CacheGo-GooglePlay</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MAPS_API_KEY">AIzaSyD8ta0WMzK9G6DgZOXFeKmPHM6aq81MNrU</string>
+</resources>
