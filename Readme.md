@@ -1,6 +1,8 @@
 # CacheGo
 Geocaching Android app, developed as part of a college project. 
-The app allows users to hide & find caches in their local area. The app was developed using Android Studio and Java. 
+The app allows users to hide & find caches in their local area. 
+
+The app was developed using Android Studio and Java. 
 We used Google Maps API to implement our maps and navigation features, while Firebase Realtime Database was used to store all information. 
 
  [Published to Google Play.](https://play.google.com/store/apps/details?id=com.cache.cachego)
