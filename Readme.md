@@ -8,7 +8,7 @@ We used Google Maps API to implement our maps and navigation features, while Fir
  [Published to Google Play.](https://play.google.com/store/apps/details?id=com.cache.cachego)
  
 ## Features
-- Users can login and register.
+- Users can login and register (login details gets saved).
 - Users can view Caches on a Google Map, and tap on them to view their details.
 - Users can select to navigate to a selected cache.
 - Once a user gets to the cache, they can mark it as found.
