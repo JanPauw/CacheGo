@@ -2,6 +2,7 @@ package com.cache.cachego;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -20,6 +21,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -41,6 +44,18 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Please wait");
         progressDialog.setCanceledOnTouchOutside(false);
+
+        //Check Login Details Through HashMap
+        Intent i = getIntent();
+        if (i.hasExtra("loginDetails")) {
+            Bundle extras = i.getExtras();
+            HashMap<String, Object> hashMap = (HashMap<String, Object>) extras.getSerializable("loginDetails");
+
+            email = hashMap.get("email").toString();
+            password = hashMap.get("password").toString();
+
+            loginUser();
+        }
 
         binding.btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,11 +82,9 @@ public class LoginActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(this, "Please enter a valid name!", Toast.LENGTH_SHORT).show();
-        }
-        else if (TextUtils.isEmpty(password)) {
+        } else if (TextUtils.isEmpty(password)) {
             Toast.makeText(this, "Please enter a valid password!", Toast.LENGTH_SHORT).show();
-        }
-        else {
+        } else {
             loginUser();
         }
     }
@@ -91,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(Exception e) {
                         progressDialog.dismiss();
-                        Toast.makeText(LoginActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }
@@ -106,6 +119,12 @@ public class LoginActivity extends AppCompatActivity {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
+                        SharedPreferences sp = getSharedPreferences("Login", MODE_PRIVATE);
+                        SharedPreferences.Editor Ed = sp.edit();
+                        Ed.putString("Email", email);
+                        Ed.putString("Password", password);
+                        Ed.apply();
+
                         progressDialog.dismiss();
 
                         startActivity(new Intent(LoginActivity.this, MapsActivity.class));

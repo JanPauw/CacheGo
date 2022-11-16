@@ -101,7 +101,13 @@ public class AddCommentFragment extends Fragment {
 
                 String FullName = sf.getUserName();
                 int iPos = FullName.indexOf(' ');
-                String author = FullName.substring(0, iPos);
+
+                String author = FullName;
+                if (iPos == -1) {
+                } else {
+                    author = FullName.substring(0, iPos);
+                }
+
 
                 String comment = binding.edtComment.getText().toString().trim();
 

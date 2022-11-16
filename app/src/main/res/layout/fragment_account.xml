@@ -190,8 +190,45 @@
 
             </RelativeLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"></Space>
+
+            <RelativeLayout
+                android:id="@+id/rlLogout"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:background="@color/black"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/yellow"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout of your account"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"></TextView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
         </LinearLayout>
+
+
 
     </RelativeLayout>
 
