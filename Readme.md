@@ -6,7 +6,7 @@ The app allows users to hide & find caches in their local area.
 
 ## Tech Stack
 
-**Client:** Java, Android Studio
+**Client:** Java, Google Maps API, Android Studio
 
 **Server:** Google Cloud, Firebase Auth, Firebase Realtime Database
 
